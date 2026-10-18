@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saturday Bakehouse</title>
+<meta name="description" content="Naturally leavened sourdough and laminated pastries, baked once a week on Saturday morning. Order by DM, pick up warm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..800,50..100;1,9..144,300..800,50..100&family=Karla:wght@400;500;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="wordmark" href="#top" aria-label="Saturday Bakehouse home">
+      <svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true">
+        <ellipse cx="20" cy="22" rx="17" ry="12" fill="#b0743f"/>
+        <ellipse cx="20" cy="20" rx="17" ry="12" fill="#cf9254"/>
+        <path d="M9 18c4-5 13-7 22-3" stroke="#f6eee0" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <b>Saturday Bakehouse</b>
+      <small>one bake a week</small>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#rhythm">How it works</a>
+      <a href="#story">Our story</a>
+      <a class="btn" href="#order">DM to order</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Your favorite sourdough &amp; pastries, small batch!</span>
+        <h1 id="hero-title">Baked on Saturday.<br>Gone by <em>Sunday.<svg class="squiggle" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 12c20-9 38 7 58-1s38-8 58 0 40 8 76-4" stroke="#d9822b" stroke-width="4" fill="none" stroke-linecap="round"/></svg></em></h1>
+        <p class="lede">Slow-fermented loaves and butter-folded pastries, made by hand once a week in a very small kitchen. Send us a DM by Thursday and we’ll bake yours.</p>
+        <div class="cta">
+          <a class="btn" href="#order">Build your order</a>
+          <a class="btn ghost" href="#menu">See this week’s bake</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="board"></div>
+        <svg class="loaf" viewBox="0 0 300 220">
+          <defs>
+            <radialGradient id="crust" cx="45%" cy="35%" r="70%">
+              <stop offset="0" stop-color="#e2a861"/>
+              <stop offset=".55" stop-color="#b8692e"/>
+              <stop offset="1" stop-color="#6e3a1a"/>
+            </radialGradient>
+            <linearGradient id="ear" x1="0" x2="1">
+              <stop offset="0" stop-color="#f3d7a4"/>
+              <stop offset="1" stop-color="#e3b676"/>
+            </linearGradient>
+          </defs>
+          <path d="M18 128C14 66 82 22 156 24s132 44 128 102c-3 48-62 78-134 78S21 176 18 128z" fill="url(#crust)"/>
+          <!-- the ear: main score -->
+          <path d="M52 112c40-46 120-64 196-34" stroke="#5a2e14" stroke-width="5" fill="none" stroke-linecap="round" opacity=".6"/>
+          <path d="M56 106c40-40 116-56 188-32-60-6-130 8-188 32z" fill="url(#ear)"/>
+          <!-- flour dusting -->
+          <g fill="#fbf6ec" opacity=".75">
+            <circle cx="110" cy="150" r="2"/><circle cx="130" cy="160" r="1.5"/><circle cx="170" cy="148" r="2.2"/>
+            <circle cx="196" cy="162" r="1.6"/><circle cx="150" cy="172" r="1.8"/><circle cx="90" cy="140" r="1.4"/>
+            <circle cx="220" cy="140" r="1.8"/><circle cx="240" cy="120" r="1.3"/><circle cx="76" cy="160" r="1.2"/>
+          </g>
+          <path d="M70 160c30 14 120 18 170-6" stroke="#5a2e14" stroke-width="2" fill="none" opacity=".25" stroke-linecap="round"/>
+        </svg>
+        <div class="stamp-wrap">
+          <svg class="stamp" viewBox="0 0 120 120">
+            <defs><path id="circ" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
+            <circle cx="60" cy="60" r="58" fill="#f0c86a"/>
+            <circle cx="60" cy="60" r="34" fill="none" stroke="#3a2418" stroke-width="1.5" stroke-dasharray="3 4"/>
+            <text class="stamp-text">
+              <textPath href="#circ" textLength="286" lengthAdjust="spacing">FRESH SATURDAYS · PICKUP 9–1 · BY DM ·</textPath>
+            </text>
+          </svg>
+          <span class="dot">Sat.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ribbon" id="ribbon" role="status">
+    <div class="wrap">
+      <span><i class="pulse"></i><span id="status-text">Taking orders for Saturday</span></span>
+      <span>DMs close <b>Thursday 8pm</b></span>
+      <span>Pickup <b>Sat 9am–1pm</b></span>
+    </div>
+  </div>
+
+  <!-- MENU -->
+  <section id="menu" aria-labelledby="menu-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">this week’s bake sheet</span>
+          <h2 id="menu-title">What’s coming out of the oven</h2>
+        </div>
+        <p>A short list on purpose. Everything is naturally leavened or laminated by hand, and the pastry changes with whatever fruit is good that week.</p>
+      </div>
+
+      <article class="sheet">
+        <div class="sheet-top">
+          <span class="hand" id="bake-date">Bake for Saturday</span>
+          <span>Limited — first come, first baked</span>
+        </div>
+        <div class="menu-cols" id="menu-cols"><!-- filled from MENU data below --></div>
+        <div class="sheet-foot">
+          <span><span class="hand">psst —</span> bring a clean jar and we’ll share some starter, free.</span>
+          <a class="btn" href="#order">Add to my order</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- RHYTHM -->
+  <section id="rhythm" class="rhythm" aria-labelledby="rhythm-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">four days for one morning</span>
+          <h2 id="rhythm-title">The weekend rhythm</h2>
+        </div>
+        <p>Good bread doesn’t hurry, so neither do we. Here’s what happens between your DM and your warm bag.</p>
+      </div>
+      <ol class="days">
+        <li>
+          <div class="when">Mon–<br>Thu</div>
+          <h3>You DM</h3>
+          <p>Send your list. We confirm and pencil you onto the bake sheet.</p>
+          <span class="time">closes Thu, 8pm</span>
+        </li>
+        <li>
+          <div class="when">Thu</div>
+          <h3>Feed &amp; fold</h3>
+          <p>The starter wakes up. Butter gets folded into dough, three times.</p>
+          <span class="time">evening</span>
+        </li>
+        <li>
+          <div class="when">Fri</div>
+          <h3>Mix &amp; shape</h3>
+          <p>Dough is mixed, shaped by hand, and left to sleep cold overnight.</p>
+          <span class="time">all day</span>
+        </li>
+        <li>
+          <div class="when">Sat</div>
+          <h3>Bake &amp; pick up</h3>
+          <p>Ovens on before sunrise. Bring your bag — it’ll still be warm.</p>
+          <span class="time">9am – 1pm</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story" class="story" aria-labelledby="story-title">
+    <div class="wrap">
+      <div>
+        <figure class="polaroid">
+          <div class="pic" aria-hidden="true">
+            <svg viewBox="0 0 200 240" width="78%">
+              <!-- a jar of starter -->
+              <rect x="56" y="58" width="88" height="140" rx="16" fill="#fbf6ec" opacity=".55" stroke="#3a2418" stroke-width="3"/>
+              <rect x="50" y="40" width="100" height="24" rx="6" fill="#8a5a3b" stroke="#3a2418" stroke-width="3"/>
+              <path d="M60 120c10-6 20 4 30-2s20 4 30-2 14 4 20 0v74a14 14 0 0 1-14 14H74a14 14 0 0 1-14-14z" fill="#f2e1c2"/>
+              <g fill="#d9b98b"><circle cx="78" cy="150" r="4"/><circle cx="104" cy="170" r="3"/><circle cx="122" cy="140" r="5"/><circle cx="90" cy="186" r="3.5"/><circle cx="118" cy="190" r="2.5"/></g>
+              <rect x="70" y="84" width="60" height="26" rx="3" fill="#fffaf0" stroke="#3a2418" stroke-width="2" transform="rotate(-4 100 97)"/>
+              <text x="100" y="102" text-anchor="middle" class="jar-label" transform="rotate(-4 100 97)">Doris</text>
+            </svg>
+          </div>
+          <figcaption>Doris, est. one rainy spring</figcaption>
+        </figure>
+        <p class="polaroid-note">↑ she’s older than the bakery and far more demanding.</p>
+      </div>
+
+      <div>
+        <span class="eyebrow">about us</span>
+        <h2 id="story-title">It started with a jar on the windowsill.</h2>
+        <div class="story-body">
+          <p>Saturday Bakehouse began the way most good habits do: by accident. A jar of flour and water got left on a windowsill, started to bubble, and was given a name. Doris needed feeding, so we baked. Then we baked too much, so we gave it to the neighbours. Then the neighbours started asking for more.</p>
+          <p>We still bake in a small kitchen with one oven and a lot of patience. Our loaves rest for up to 36 hours before they see heat. Our croissants take three days. We can’t make a lot, and we’ve stopped apologising for that — it’s what keeps everything honest.</p>
+          <p>So we bake once a week, on Saturday, for the people who asked. No shelf, no leftovers, nothing sitting under a lamp. Just bread and pastry made for you, by name, and handed over still warm.</p>
+        </div>
+        <ul class="promises">
+          <li><b>36 hrs</b><span>slow, cold fermentation for every loaf</span></li>
+          <li><b>4</b><span>ingredients in our country loaf — that’s it</span></li>
+          <li><b>0</b><span>day-old bread. We bake to order.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section id="order" class="order" aria-labelledby="order-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">dm to order</span>
+          <h2 id="order-title">Write your bake list</h2>
+        </div>
+        <p>Pick what you’d like and we’ll write the DM for you. Copy it, send it to us on Instagram, and we’ll reply to confirm. You pay at pickup.</p>
+      </div>
+
+      <div class="order-grid">
+        <form class="card" id="order-form" novalidate>
+          <h3>Your order</h3>
+          <p class="sub">Tap + to add. Nothing is charged here.</p>
+
+          <div id="picks"><!-- filled from MENU data --></div>
+
+          <fieldset>
+            <legend>About you</legend>
+            <div class="fields">
+              <div>
+                <label for="name">Name for the bag</label>
+                <input id="name" name="name" autocomplete="given-name" placeholder="e.g. Sam">
+              </div>
+              <div>
+                <label for="handle">Your Instagram (optional)</label>
+                <input id="handle" name="handle" placeholder="@yourhandle" autocomplete="off">
+              </div>
+              <div class="full">
+                <label id="slot-label">Pickup window</label>
+                <div class="radios" role="radiogroup" aria-labelledby="slot-label">
+                  <label><input type="radio" name="slot" value="9–10am" checked><span>9–10am</span></label>
+                  <label><input type="radio" name="slot" value="10–11am"><span>10–11am</span></label>
+                  <label><input type="radio" name="slot" value="11am–12pm"><span>11–12</span></label>
+                  <label><input type="radio" name="slot" value="12–1pm"><span>12–1pm</span></label>
+                </div>
+              </div>
+              <div class="full">
+                <label for="notes">Anything else?</label>
+                <textarea id="notes" name="notes" placeholder="Allergies, sliced loaf, a birthday candle in the cardamom knot…"></textarea>
+              </div>
+            </div>
+          </fieldset>
+          <p class="err" id="err" aria-live="polite"></p>
+        </form>
+
+        <aside class="dm" aria-labelledby="dm-title">
+          <h3 id="dm-title" class="sr-only">Your DM</h3>
+          <div class="note-card">
+            <div class="to">DM to @saturdaybakehouse</div>
+            <pre id="dm-text" aria-live="polite"></pre>
+            <div class="total"><span>Pay at pickup</span><span id="dm-total">$0.00</span></div>
+          </div>
+          <div class="dm-actions">
+            <button class="btn alt" type="button" id="copy-open">Copy &amp; open Instagram DM</button>
+            <button class="btn ghost" type="button" id="copy-only">Just copy the message</button>
+          </div>
+          <p class="dm-help">Instagram doesn’t let websites pre-fill a DM, so we copy it for you — just <b>paste</b> and send. We reply within a day.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p class="big">Bread for people<br>who plan ahead.</p>
+    </div>
+    <div>
+      <h4>Pickup</h4>
+      <p>Saturdays, 9am – 1pm<br>The green door, Your Street 12<br>Ring the bell, we’ll come out</p>
+    </div>
+    <div>
+      <h4>Say hello</h4>
+      <p><a href="https://instagram.com/saturdaybakehouse" rel="noopener">@saturdaybakehouse</a> on Instagram<br>DMs open Monday to Thursday 8pm</p>
+    </div>
+  </div>
+  <p class="fine">Made by hand, with flour on everything. © <span id="yr"></span> Saturday Bakehouse. Veries Seals III. Claude Code Project Example.</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
